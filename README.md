@@ -85,7 +85,7 @@ Genderwise View Counts
 <img src="figures/View Counts of Movies by Gender.png" alt="View Counts of Movies by Gender" width ="700"/>
 </p>
 
-- **Character Popularity**:
+**Character Popularity**:
   - Characters like Han Solo, Luke Skywalker, Princess Leia Organa, and Yoda are widely favored.
   - Characters like Jar Jar Binks and Emperor Palpatine received mixed or unfavorable reviews, reflecting divisive opinions.
  
@@ -93,7 +93,7 @@ Genderwise View Counts
 <img src="figures/Review of Star Wars Characters Based on Familiarity and Public Sentiment.png" alt="Review of Star Wars Characters Based on Familiarity and Public Sentiment" width ="800"/>
 </p>
 
-- **Character Popularity by Gender**:
+Character Popularity by Gender:
 
  - The analysis shows that male respondents generally have a higher favorable opinion of protagonist characters like Luke Skywalker and Han Solo compared to female respondents.
  - Female respondents showed a more neutral or unfavorable opinion towards antagonist characters like Darth Vader and Emperor Palpatine.
@@ -105,6 +105,7 @@ Genderwise View Counts
 <p align="center">
 <img src="figures/Popularity of Star Wars Characters Among Females.png" alt="Popularity of Star Wars Characters Among Females" width ="800"/>
 </p>
+
 
 ## How to Use
 
@@ -120,3 +121,5 @@ Genderwise View Counts
 This project provides a comprehensive analysis of the Star Wars movies and characters based on survey data. The insights gained can be valuable for understanding audience preferences and character popularity across different demographics. 
 
 Feel free to explore and modify the code to perform further analysis or use the cleaned dataset for other projects.
+
+**Note**: This project aims to develop skills in data cleaning and preparation, crucial for effective analysis. However, the dataset used has notable limitations: it may have sampling bias, lacks comprehensive demographic details, and contains inconsistencies such as missing or ambiguous data. These issues mean that the dataset is not fully representative of real-world scenarios, and the results may not accurately reflect broader trends or insights applicable to actual datasets.
