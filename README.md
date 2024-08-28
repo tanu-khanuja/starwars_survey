@@ -1,8 +1,8 @@
 # Star Wars Movie and Character Analysis
 
-## Overview
+## Project Overview
 
-This project focuses on data cleaning and analysis using FiveThirtyEight's Star Wars survey data. The primary goal is to clean the dataset for further analysis and to explore insights into movie rankings, view counts, and character familiarity among Star Wars fans.
+This project focuses on cleaning and analyzing data from FiveThirtyEight's Star Wars survey. The primary goal is to prepare the dataset for further analysis and extract insights about movie rankings, view counts, and character popularity amongs men and women.
 
 ## Project Structure
 
@@ -13,6 +13,7 @@ This project focuses on data cleaning and analysis using FiveThirtyEight's Star 
 
 - `StarWars.csv`: The original dataset used for the analysis.
 - `main.ipynb`: The Jupyter Notebook containing the code for data cleaning, analysis, and visualization.
+- `figures`: This folder contains all the figures generated during the analysis
 - `README.md`: This file, providing an overview and guide to the project.
 
 ## Steps Performed
@@ -22,7 +23,6 @@ This project focuses on data cleaning and analysis using FiveThirtyEight's Star 
    - **Initial Exploration**: Checked the dataset's structure and identified that the 0th row contained column subtitles.
    - **Index Reset**: Dropped the 0th row, reset the index, and renamed columns for clarity.
    - **Mapping**: Mapped `Yes/No` responses to `True/False` and movie names to `True/False`.
-   - **Column Type Conversion**: Changed data types for clarity, such as converting `RespondentID` to `int` and ranking columns to `float`.
 
 2. **Data Analysis**:
    - **Average Movie Ranking**:
@@ -37,6 +37,9 @@ This project focuses on data cleaning and analysis using FiveThirtyEight's Star 
    - **Character Familiarity**:
      - Mapped and categorized character familiarity into favorable, neutral, unfavorable, and review unavailable.
      - Visualized character familiarity using a stacked bar chart.
+   - **Character Popularity by Gender**:
+     - Analyzed character popularity separately for male and female respondents.
+     - Visualized the data using a stacked bar chart, showing the percentage share of favorable, neutral, and unfavorable responses by gender.
 
 ## Key Findings and Visualization
 
@@ -54,7 +57,7 @@ Male Respondents:
    - Episodes I and IV had more consistent rankings, with less variability in opinions among males.
 
 <p align="center">
-<img src="figures/Genderwise Distribution of Movie Rankings - Male.png" alt="Distribution of Movie Rankings" width ="700"/>
+<img src="figures/Genderwise Distribution of Movie Rankings - Male.png" alt="Genderwise Distribution of Movie Rankings - Male" width ="700"/>
 </p>
 
 Female Respondents:
@@ -62,7 +65,7 @@ Female Respondents:
    - Episode IV received mixed reactions from female viewers, with a high interquartile range (IQR), indicating either strong approval or disapproval.
 
 <p align="center">
-<img src="figures/Genderwise Distribution of Movie Rankings - Female.png" alt="Distribution of Movie Rankings" width ="700"/>
+<img src="figures/Genderwise Distribution of Movie Rankings - Female.png" alt="Genderwise Distribution of Movie Rankings - Female" width ="700"/>
 </p>
 
 **View Counts**:
@@ -70,7 +73,7 @@ Female Respondents:
   - Both male and female respondents tend to favor older movies in rankings despite watching newer episodes more.
   
 <p align="center">
-<img src="figures/Total View Counts of Different Episodes.png" alt="Distribution of Movie Rankings" width ="700"/>
+<img src="figures/Total View Counts of Different Episodes.png" alt="Total View Counts of Different Episodes" width ="700"/>
 </p>
 
 Genderwise View Counts
@@ -79,7 +82,7 @@ Genderwise View Counts
 - However, the older movies generally received higher rankings than the newer ones from both genders.
   
 <p align="center">
-<img src="figures/View Counts of Movies by Gender.png" alt="Distribution of Movie Rankings" width ="700"/>
+<img src="figures/View Counts of Movies by Gender.png" alt="View Counts of Movies by Gender" width ="700"/>
 </p>
 
 - **Character Popularity**:
@@ -87,7 +90,20 @@ Genderwise View Counts
   - Characters like Jar Jar Binks and Emperor Palpatine received mixed or unfavorable reviews, reflecting divisive opinions.
  
 <p align="center">
-<img src="figures/Review of Star Wars Characters Based on Familiarity and Public Sentiment.png" alt="Distribution of Movie Rankings" width ="800"/>
+<img src="figures/Review of Star Wars Characters Based on Familiarity and Public Sentiment.png" alt="Review of Star Wars Characters Based on Familiarity and Public Sentiment" width ="800"/>
+</p>
+
+- **Character Popularity by Gender**:
+
+ - The analysis shows that male respondents generally have a higher favorable opinion of protagonist characters like Luke Skywalker and Han Solo compared to female respondents.
+ - Female respondents showed a more neutral or unfavorable opinion towards antagonist characters like Darth Vader and Emperor Palpatine.
+
+<p align="center">
+<img src="figures/Popularity of Star Wars Characters Among Males.png" alt="Popularity of Star Wars Characters Among Males" width ="800"/>
+</p>
+
+<p align="center">
+<img src="figures/Popularity of Star Wars Characters Among Females.png" alt="Popularity of Star Wars Characters Among Females" width ="800"/>
 </p>
 
 ## How to Use
